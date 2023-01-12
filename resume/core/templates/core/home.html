@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="mt-5">
+    <div class="text-center">
+        <img src=" {% static 'core/images/pic1.jpg' %} " alt="Porfile pic" class="img-thumbnail mt-4" width="250px" height="150px">
+    </div>
+    <div class=" mt-5 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height:2rem;">
+            <p b class="text-indent:100px;">
+                Although man's <b class="text-warning">ancestors</b> had limited ways to advance their newly found ideas, their narrow expertise made life easier. For example, they were able to cook food to make it softer and easier to eat. Gains in the Stone Age led to the development of agricultural tools and techniques. Agriculture became a new source of livelihood and eased the pressure from hunting. From then on, modern civilization started to advance.
+            </p>
+            <p>
+                Many decades later, the era of <b class="text-warning">information technology</b> came about. The Soviet Union launched the first satellite, called the Sputnik, at the height of the Cold War in 1957. America was stunned, and to counter the launch, it created the Advanced Research Projects Agency to develop computer science. Although computers at that time were huge devices that filled entire rooms, they could process some information. Later, the agency succeeded in connecting four computers running independently. That simple connection gave rise to the Internet, which is a pivot point of developing other technologies.
+            </p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href=" {% url 'contact' %} " class="btn btn-outline-warning my-3 mr-5">Higher Me</a>
+        <a href=" {% url 'contact' %} " class="btn btn-outline-info my-3 ">Contact</a>
+    </div>
+</div>
+
+{% endblock content %}

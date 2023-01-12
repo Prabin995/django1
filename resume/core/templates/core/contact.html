@@ -1,0 +1,75 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-warning mb-5 border-bottom">Contact Us</h1>
+
+    <div class="row text-white mb-5">
+        <p class="mx-auto mb-5">Do you have any questions ? Piease do not hesitate to contact . 
+            I will come . 
+            back to you within a matter fo hours to help you . 
+        </p>
+
+        <div class="col-sm-8 mb-5">
+            <form action="">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <lable for="inputName"> Your Name</lable>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <lable for="inputEmail"> Your Email *</lable>
+                        <input type="email" class="form-control" id="inputEmail">
+                    </div>
+
+                <div class="form-group">
+                    <lable for="inputSubject"> Your Subject</lable>
+                    <input type="text" class="form-control" id="inputSubject">
+                </div>
+
+                <div class="form-group">
+                    <lable for="inputTextarea"> Your message *</lable>
+                    <input type="text" class="form-control" id="inputTextarea">
+                </div>
+                <input class="btn btn-primary mt-4" type="submit" value="Submit">
+
+            </form>
+        </div>
+
+    </div>
+    <div class="col-3 text-center">
+        <ul class="list-unstyled">
+            <li>
+                <i class="fa-solid fa-location-dot fa-2x i-color"></i>
+                <p>Kundule,Baglung,Nepal</p>
+            </li>
+        </ul>
+
+        <ul class="list-unstyled">
+            <li>
+                <i class="fa-solid fa-phone-volume fa-2x i-color"></i>
+                <p>+977 9867688585</p>
+            </li>
+        </ul>
+
+        <ul class="list-unstyled">
+            <li>
+                <i class="fa-solid fa-envelope  fa-2x i-color"></i>
+                <p>Prabinsapkota@gmail.com</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="text-center">
+        <a href="#" target="_blank"><i class="fa-brands fa-twitter me-3 i-color "></i></a>
+
+        <a href="#" target="_blank"><i class="fa-brands fa-facebook me-3 i-color "></i></a>
+
+        <a href="#" target="_blank"><i class="fa-brands fa-instagram i-color me-3"></i></a>
+
+        <a href="#" target="_blank"><i class="fa-brands fa-dribbble i-color "></i></a>
+    </div>
+
+</div>
+{% endblock content %}
